@@ -1,19 +1,11 @@
-# a mybinder.org-ready environment for demoing jupyterlab_git
-# this environment may also be used locally on Linux/MacOS/Windows, e.g.
-#
-#   conda env update --file binder/environment.yml
-#   conda activate jupyterlab-git-demo
-#
-name: jupyterlab-git
-
+name: my-notebook-env
 channels:
   - conda-forge
-
+  - nodefaults
 dependencies:
-  # runtime dependencies
-  - python >=3.10,<3.11.0a0
-  - jupyterlab >=4.0.0,<5
-  # labextension build dependencies
-  - nodejs >=18,<19
-  - pip
-  - wheel
+  - jupyterlab-git  >=0.34  
+  - jupyterlab >=3,<4
+  - git
+  - python >=3.9,<3.10 # for example
+  - geopandas          # for example, brings in pandas, numpy, gdal, etc.
+  - ipyleaflet         # for example, brings in ipywidgets, etc
