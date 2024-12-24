@@ -4,7 +4,7 @@
 #   conda env update --file binder/environment.yml
 #   conda activate jupyterlab-git-demo
 #
-name: jupyterlab-git-demo
+name: jupyterlab-git
 
 channels:
   - conda-forge
